@@ -1,0 +1,58 @@
+{
+	"name": "StageWorldcups",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Year",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Host_Country",
+				"type": "varchar"
+			},
+			{
+				"name": "Winner",
+				"type": "varchar"
+			},
+			{
+				"name": "Runners_Up",
+				"type": "varchar"
+			},
+			{
+				"name": "Third",
+				"type": "varchar"
+			},
+			{
+				"name": "Fourth",
+				"type": "varchar"
+			},
+			{
+				"name": "Goals_Scored",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Qualified_Teams",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Matches_Played",
+				"type": "int",
+				"precision": 10
+			}
+		],
+		"typeProperties": {
+			"schema": "stage",
+			"table": "world_cups"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

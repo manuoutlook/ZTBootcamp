@@ -1,0 +1,48 @@
+{
+	"name": "AzureSqlTable3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Year",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Date",
+				"type": "date"
+			},
+			{
+				"name": "Stage",
+				"type": "varchar"
+			},
+			{
+				"name": "Home_Team",
+				"type": "varchar"
+			},
+			{
+				"name": "Away_Team",
+				"type": "varchar"
+			},
+			{
+				"name": "Host_Team",
+				"type": "bit"
+			}
+		],
+		"typeProperties": {
+			"schema": "stage",
+			"table": "world_cup_matches_2022"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

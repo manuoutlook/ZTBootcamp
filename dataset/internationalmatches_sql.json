@@ -1,0 +1,57 @@
+{
+	"name": "internationalmatches_sql",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Tournament",
+				"type": "varchar"
+			},
+			{
+				"name": "Date",
+				"type": "date"
+			},
+			{
+				"name": "Home_Team",
+				"type": "varchar"
+			},
+			{
+				"name": "Home_Goals",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Away_Goals",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Away_Team",
+				"type": "varchar"
+			},
+			{
+				"name": "Win_Conditions",
+				"type": "varchar"
+			},
+			{
+				"name": "Home_Stadium",
+				"type": "bit"
+			}
+		],
+		"typeProperties": {
+			"schema": "stage",
+			"table": "international_matches"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

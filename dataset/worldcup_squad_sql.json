@@ -1,0 +1,63 @@
+{
+	"name": "worldcup_squad_sql",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Team",
+				"type": "varchar"
+			},
+			{
+				"name": "Position",
+				"type": "varchar"
+			},
+			{
+				"name": "Player",
+				"type": "varchar"
+			},
+			{
+				"name": "Age",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Caps",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Goals",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "WC_Goals",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "League",
+				"type": "varchar"
+			},
+			{
+				"name": "Club",
+				"type": "varchar"
+			}
+		],
+		"typeProperties": {
+			"schema": "stage",
+			"table": "world_cup_squads"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

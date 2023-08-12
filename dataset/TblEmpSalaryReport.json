@@ -1,0 +1,39 @@
+{
+	"name": "TblEmpSalaryReport",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabaseManu",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "Name",
+				"type": "varchar"
+			},
+			{
+				"name": "Address",
+				"type": "varchar"
+			},
+			{
+				"name": "Mobile",
+				"type": "varchar"
+			},
+			{
+				"name": "Month",
+				"type": "varchar"
+			},
+			{
+				"name": "Salary",
+				"type": "float",
+				"precision": 15
+			}
+		],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "tblEmpSalaryReport"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

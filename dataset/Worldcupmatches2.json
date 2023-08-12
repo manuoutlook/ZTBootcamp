@@ -1,0 +1,62 @@
+{
+	"name": "Worldcupmatches2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSqlDatabase1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [
+			{
+				"name": "ID",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Year",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Date",
+				"type": "date"
+			},
+			{
+				"name": "Stage",
+				"type": "varchar"
+			},
+			{
+				"name": "Home_Team",
+				"type": "varchar"
+			},
+			{
+				"name": "Home_Goals",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Away_Goals",
+				"type": "int",
+				"precision": 10
+			},
+			{
+				"name": "Away_Team",
+				"type": "varchar"
+			},
+			{
+				"name": "Win_Conditions",
+				"type": "varchar"
+			},
+			{
+				"name": "Host_Team",
+				"type": "bit"
+			}
+		],
+		"typeProperties": {
+			"schema": "stage",
+			"table": "world_cup_matches"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

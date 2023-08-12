@@ -1,0 +1,9 @@
+{
+	"name": "ADF-Manu-Bootcamp",
+	"location": "westus3",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "73f30d4e-bde8-4df3-82c5-8a54ea1da137",
+		"tenantId": "ad0b7821-86ee-46c4-841a-be99da55a98e"
+	}
+}

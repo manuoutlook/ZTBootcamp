@@ -1,0 +1,38 @@
+{
+	"name": "worldcup_group",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorageManu",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "2022_world_cup_groups.csv",
+				"folderPath": "worldcup",
+				"fileSystem": "bootcampcontainer"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Group",
+				"type": "String"
+			},
+			{
+				"name": "Team",
+				"type": "String"
+			},
+			{
+				"name": "FIFA Ranking",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,62 @@
+{
+	"name": "WorldCup_csv",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorageManu",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "world_cups.csv",
+				"folderPath": "worldcup",
+				"fileSystem": "bootcampcontainer"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Year",
+				"type": "String"
+			},
+			{
+				"name": "Host Country",
+				"type": "String"
+			},
+			{
+				"name": "Winner",
+				"type": "String"
+			},
+			{
+				"name": "Runners-Up",
+				"type": "String"
+			},
+			{
+				"name": "Third",
+				"type": "String"
+			},
+			{
+				"name": "Fourth",
+				"type": "String"
+			},
+			{
+				"name": "Goals Scored",
+				"type": "String"
+			},
+			{
+				"name": "Qualified Teams",
+				"type": "String"
+			},
+			{
+				"name": "Matches Played",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

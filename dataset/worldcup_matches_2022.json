@@ -1,0 +1,54 @@
+{
+	"name": "worldcup_matches_2022",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorageManu",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "2022_world_cup_matches.csv",
+				"folderPath": "worldcup",
+				"fileSystem": "bootcampcontainer"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "ID",
+				"type": "String"
+			},
+			{
+				"name": "Year",
+				"type": "String"
+			},
+			{
+				"name": "Date",
+				"type": "String"
+			},
+			{
+				"name": "Stage",
+				"type": "String"
+			},
+			{
+				"name": "Home Team",
+				"type": "String"
+			},
+			{
+				"name": "Away Team",
+				"type": "String"
+			},
+			{
+				"name": "Host Team",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
